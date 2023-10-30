@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>IG Foto Feed</title>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar bg-body-tertiary d-flex justify-content-between"> <!-- NAVBAR-->
+        <div class="container-fluid"> 
+            <div>
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> <strong>Instagram</strong></a>
+            </div>
+            <div class="d-flex justify-content-center gap-2">
+                <div> <!-- MODAL -->
+                        <button type="button" class="btn btn-primary bg-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <p><strong>Caption:</strong></p>
+                                            <input type="text" id="caption" name="caption" size="50" placeholder="Add the caption of your post here"/>
+                                        </div>
+                                        <div class="d-flex justify-content-left ms-1">
+                                            <button type="button" class="btn btn-tertiary"><i class="fa-solid fa-camera"></i></button>
+                                            <button type="button" class="btn btn-tertiary"><i class="fas fa-map-marker-alt"></i></button>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary bg-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div> <!-- DropDown-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear bg-secondary" style="color: #ffffff;"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accecibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy an Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </nav>
+    <div class="navbar d-flex justify-content-center">
+        <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-grilla-tab" data-bs-toggle="pill" data-bs-target="#pills-grilla" type="button" role="tab" aria-controls="pills-grilla" aria-selected="true">
+                    <i class="fa-solid fa-table-cells"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-columna-tab" data-bs-toggle="pill" data-bs-target="#pills-columna" type="button" role="tab" aria-controls="pills-columna" aria-selected="false">
+                    <i class="fa-solid fa-square"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-grilla" role="tabpanel" aria-labelledby="pills-grilla-tab" tabindex="0">
+            <div class="row">
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/300" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/301" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/302" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/303" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/304" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/305" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/306" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/307" class="w-100 h-100">
+                </div>
+                <div class="col-12 col-md-4 p-1">
+                    <img src="https://picsum.photos/300/308" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-columna" role="tabpanel" aria-labelledby="pills-columna-tab" tabindex="0">
+            <div class="row flex-column">
+                <div class="col-12 mt-5">
+                    <div class="d-flex justify-content-between border border-light-subtle">
+                        <h5 class="ms-1">
+                            Ramdom Foto 1
+                        </h5>
+                        <p class="me-1">
+                            08/26
+                        </p>
+                    </div>
+                    <img src="https://picsum.photos/300/300" class="w-100 h-100">
+                    <div class="border border-light-subtle m-0">
+                        <h6 class="mt-1 mb-0"><strong>204 Likes</strong></h6>
+                        <p class="m-0">This is an example of a very good that you can post on Instagram</p>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <div class="d-flex justify-content-between border border-light-subtle">
+                        <h5 class="ms-1">
+                            Ramdom Foto 2
+                        </h5>
+                        <p class="me-1">
+                            04/09
+                        </p>
+                    </div>
+                    <img src="https://picsum.photos/300/301" class="w-100 h-100">
+                    <div class="border border-light-subtle m-0">
+                        <h6 class="mt-1 mb-0"><strong>26985 Likes</strong></h6>
+                        <p class="m-0">This is an example of a very good that you can post on Instagram</p>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <div class="d-flex justify-content-between border border-light-subtle">
+                        <h5 class="ms-1">
+                            Ramdom Foto 3
+                        </h5>
+                        <p class="me-1">
+                            06/10
+                        </p>
+                    </div>
+                    <img src="https://picsum.photos/300/302" class="w-100 h-100">
+                    <div class="border border-light-subtle m-0">
+                        <h6 class="mt-1 mb-0"><strong>204 Likes</strong></h6>
+                        <p class="m-0">This is an example of a very good that you can post on Instagram</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/86917622aa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
